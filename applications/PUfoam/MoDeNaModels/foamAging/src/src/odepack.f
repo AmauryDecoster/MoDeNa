@@ -16247,7 +16247,7 @@ C Note: SAVF in DSTODI occupies the same space as YDOTI in DLSODIS.
 C-----------------------------------------------------------------------
       CALL DSTODI (NEQ, Y, RWORK(LYH), NYH, RWORK(LYH), RWORK(LEWT),
      1   YDOTI, RWORK(LSAVF), RWORK(LACOR), RWORK(LWM),
-     2   RWORK(LWM), RES, ADDA, JAC, DPRJIS, DSOLSS )
+     2   IWORK(LWM), RES, ADDA, JAC, DPRJIS, DSOLSS )
       KGO = 1 - KFLAG
       GO TO (300, 530, 540, 400, 550, 555), KGO
 C
